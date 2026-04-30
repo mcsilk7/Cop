@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Times New Roman', 'Georgia', serif;
+  }
+
+  body {
+    background-image: url('/background.jpg');
+    background-position: center;
+    background-color: #4a4a4a;
+    background-size: 700px;
+  }
+  
+/* 
+  body {
+
+    background-color: #4a4a4a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } */
+
+  /* Aged paper texture */
+  ::selection {
+    background-color: rgba(185, 28, 28, 0.3);
+    color: #1a1a1a;
+  }
+
+  /* Custom scrollbar for old-school feel */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #d4c9a8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #8b7355;
+    border: 1px solid #6b5a3e;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b5a3e;
+  }
+}
+
+@layer components {
+
+  /* Newspaper column text */
+  .newspaper-text {
+    font-family: 'Times New Roman', serif;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.6;
+  }
+
+  /* Vintage button */
+  .vintage-btn {
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: 2px solid #1a1a1a;
+    background: transparent;
+    transition: all 0.2s;
+  }
+
+  .vintage-btn:hover {
+    background: #991b1b;
+    color: white;
+    border-color: #991b1b;
+  }
+}
+
+@layer utilities {
+
+  /* Paper grain texture */
+  .paper-grain {
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+
+  /* Ink blot effect */
+  .ink-blot {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Typewriter cursor blink */
+  @keyframes blink-cursor {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .cursor-blink {
+    animation: blink-cursor 0.7s step-end infinite;
+  }
+
+  /* Page flip animation */
+  @keyframes flipIn {
+    from {
+      transform: rotateY(-90deg);
+      opacity: 0.5;
+    }
+
+    to {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+
+  .page-flip-in {
+    animation: flipIn 0.3s ease-out;
+  }
+
+  /* Stamp bounce */
+  @keyframes stampBounce {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.9) rotate(-3deg);
+    }
+
+    100% {
+      transform: scale(0.95) rotate(2deg);
+    }
+  }
+
+  .stamp-bounce {
+    animation: stampBounce 0.3s ease-out;
+  }
+
+  /* Radio static effect */
+  @keyframes radioStatic {
+    0% {
+      opacity: 0.8;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.7;
+    }
+
+    75% {
+      opacity: 0.9;
+    }
+
+    100% {
+      opacity: 0.8;
+    }
+  }
+
+  .radio-static {
+    animation: radioStatic 0.15s infinite;
+  }
+}
