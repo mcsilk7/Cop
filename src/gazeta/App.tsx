@@ -6,10 +6,9 @@ import { Navigation }     from './components/Navigation';
 import { SearchBar }      from './components/SearchBar';
 import { ArticleCard, ExpandedArticle } from './components/Article';
 import { Crossword }      from './components/Crossword';
-import { WeatherWidget }  from './components/WeatherWidget';
-import { Announcements }  from './components/Announcements';
 import { COPMap }         from './components/COPMap';
 import { Sidebar }        from './components/Sidebar';
+import {PoniatowaPage} from "./components/PoniatowaPage.tsx";
 
 export default function App() {
   const [activeSection,   setActiveSection]   = useState('strona1');
@@ -99,8 +98,7 @@ export default function App() {
 
                 {activeSection === 'krzyzowka'  && <Crossword />}
                 {activeSection === 'mapa'       && <COPMap />}
-                {activeSection === 'pogoda'     && <WeatherWidget />}
-                {activeSection === 'ogloszenia' && <Announcements />}
+                {activeSection === 'poniatowa'       && <PoniatowaPage />}
               </main>
 
               {/* Sidebar */}

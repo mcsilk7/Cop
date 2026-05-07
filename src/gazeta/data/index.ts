@@ -26,16 +26,6 @@ export const articles = [
 
 export type Article = (typeof articles)[0];
 
-// ============ POGODA ============
-export const pogody = [
-  { miasto: "Warszawa", temp: "+12°C", ikona: "☁️", opis: "Pochmurnie z przejasnieniami" },
-  { miasto: "Kraków",   temp: "+10°C", ikona: "⛅", opis: "Zmienna szata chmur" },
-  { miasto: "Gdańsk",   temp: "+8°C",  ikona: "🌧️", opis: "Opady deszczu" },
-  { miasto: "Wrocław",  temp: "+11°C", ikona: "☁️", opis: "Czesciowe zachmurzenie" },
-  { miasto: "Poznań",   temp: "+9°C",  ikona: "🌤️", opis: "Duze zachmurzenie" },
-  { miasto: "Katowice", temp: "+7°C",  ikona: "🌫️", opis: "Mgla, widocznosc do 200m" },
-];
-
 // ============ KRZYŻÓWKA ============
 export const crosswordData = {
   across: [
@@ -65,54 +55,10 @@ export const stamps = [
   { id: 6, name: "RADOM - VIS",    bgColor: "#3a5a54", symbol: "🔫", value: "30 GR", desc: "BROŃ"         },
 ];
 
-// ============ OGŁOSZENIA ============
-export const announcements = [
-  {
-    id: 1,
-    title: "SLUZBA ZDROWIA INFORMUJE",
-    content:
-      "Przypominamy obywatelom o obowiazku szczepien ochronnych. Punkt szczepien czynny w godzinach 8:00-14:00 w przychodni obwodowej.",
-    icon: "🏥",
-    isCoupon: false,
-  },
-  {
-    id: 2,
-    title: "NABOR DO WOJSKA",
-    content:
-      "Powiatowa Komisja Uzupelnien wzywa obywateli rocznikow 1952-1953 do stawienia sie w celu kwalifikacji wojskowej. Termin: 15-30 marca 1974 r.",
-    icon: "🎖️",
-    isCoupon: false,
-  },
-  {
-    id: 3,
-    title: "KUPON RACJONALIZATORA",
-    content:
-      "Wypelnij i wyslij! 10 najlepszych wnioskow racjonalizatorskich nagrodzonych zostanie bonem na zakup magnetowidu w Pewexie!",
-    icon: "✂️",
-    isCoupon: true,
-  },
-  {
-    id: 4,
-    title: "SPRZEDAZ MIESZKAN",
-    content:
-      "Spoldzielnia Mieszkaniowa Przyjazn oglasza zapisy na mieszkania 2- i 3-pokojowe w nowym bloku przy ul. Partyzantow 47.",
-    icon: "🏠",
-    isCoupon: false,
-  },
-  {
-    id: 5,
-    title: "KINO MOSKWA -- TYDZIEN KINA RADZIECKIEGO",
-    content:
-      "Pokazy: Moskwa nie wierzy lzem, Czajkowski, Krolowa sniegu. Bilety: 5 zl. Rezerwacja w kasie kina.",
-    icon: "🎬",
-    isCoupon: false,
-  },
-];
-
 // ============ STACJE RADIOWE ============
 export const radioStations = [
-  { freq: 95.2,  name: "PR I"    },
-  { freq: 98.4,  name: "PR II"   },
-  { freq: 102.1, name: "PR III"  },
-  { freq: 107.5, name: "MOSKWA"  },
+  { freq: 95.2,  name: "Radio Rzeszów" },
+  { freq: 98.4,  name: "Radio Stalowa Wola" },
+  { freq: 102.1, name: "Radio Mielec" },
+  { freq: 107.5, name: "Radio Tarnów" },
 ];

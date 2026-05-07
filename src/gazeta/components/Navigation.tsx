@@ -3,8 +3,7 @@ const SECTIONS = [
   { id: 'strona2',    label: 'STRONA 2'   },
   { id: 'krzyzowka',  label: 'KRZYZOWKA'  },
   { id: 'mapa',       label: 'MAPA COP'   },
-  { id: 'pogoda',     label: 'POGODA'     },
-  { id: 'ogloszenia', label: 'OGLOSZENIA' },
+  { id: 'poniatowa',       label: 'PONIATOWA'   }
 ];
 
 interface Props {
